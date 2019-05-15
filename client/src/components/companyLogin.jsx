@@ -24,7 +24,7 @@ class companyLogin extends Component {
         }
     companylogin(user).then(res => {
             if(res){
-                this.props.history.push('/profile')
+                this.props.history.push('/companyMaps')
             }
         })
         

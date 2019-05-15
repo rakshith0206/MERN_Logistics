@@ -44,14 +44,14 @@ app.use(
 const mongoURI = 'mongodb://localhost:27017/Logitrucks'
 
 mongoose
-  .connect(mongoURI, {useNewUrlParser:true})
+  .connect(mongoURI, {useNewUrlParser:true}) 
   .then(() => console.log("MongoDB connected"))
   .catch(err => console.log(err))
 
 
   var Users = require('./routes/Users')
-  var logisticsUsers = require('./routes/logisticsusers')
-  var truckerUsers = require('./routes/truckerusers')
+  var logisticsUsers = require('./routes/logisticsUsers')
+  var truckerUsers = require('./routes/truckerUsers')
   app.use('/users',Users)
   app.use('/logisticsusers',logisticsUsers)
   app.use('/truckerusers',truckerUsers)

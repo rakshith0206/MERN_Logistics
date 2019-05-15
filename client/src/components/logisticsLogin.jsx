@@ -24,7 +24,7 @@ class logisticsLogin extends Component {
         }
     logisticslogin(logisticuser).then(res => {
             if(res){
-                this.props.history.push('/profile')
+                this.props.history.push('/logisticsMaps')
             }
         })
         

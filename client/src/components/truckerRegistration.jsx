@@ -30,8 +30,7 @@ class truckerRegistration extends Component {
         }
         truckerregister(truckeruser).then(res => {
             this.props.history.push('/truckerLogin')
-        })
-        
+        })   
     }
     render(){
         return(

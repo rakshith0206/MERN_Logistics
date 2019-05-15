@@ -34,8 +34,9 @@ export const companylogin = user => {
 
 
 export const logisticsregister = newUser => {
+    console.log(newUser,"new userr")
     return axios
-        .post('users/logisticsregister',{
+        .post('logisticsusers/logisticsregister',{
             first_name: newUser.first_name,
             last_name: newUser.last_name,
             mobile:newUser.mobile,
@@ -51,7 +52,7 @@ export const logisticsregister = newUser => {
 
 export const logisticslogin = user => {
     return axios
-        .post('users/logisticslogin',{
+        .post('logisticsusers/logisticslogin',{
             email: user.email,
             password: user.password
         })
@@ -68,7 +69,7 @@ export const logisticslogin = user => {
 
 export const truckerregister = newUser => {
     return axios
-        .post('users/truckerregister',{
+        .post('truckerusers/truckerregister',{
             first_name: newUser.first_name,
             last_name: newUser.last_name,
             mobile:newUser.mobile,
@@ -84,7 +85,7 @@ export const truckerregister = newUser => {
 
 export const truckerlogin = user => {
     return axios
-        .post('users/truckerlogin',{
+        .post('truckerusers/truckerlogin',{
             email: user.email,
             password: user.password
         })

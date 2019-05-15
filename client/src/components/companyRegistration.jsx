@@ -29,7 +29,7 @@ class companyRegistration extends Component {
             password: this.state.password
         }
         companyregister(user).then(res => {
-            this.props.history.push('/login')
+            this.props.history.push('/companyLogin')
         })
         
     }

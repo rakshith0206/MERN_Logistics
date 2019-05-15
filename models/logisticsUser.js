@@ -1,7 +1,7 @@
 const mongoose = require("mongoose")
-const Schema = mongoose.Schema
+const logisticSchema = mongoose.Schema
 
-const logisticsUserSchema = new Schema({
+const logisticsUserSchema = new logisticSchema({
     first_name: {
         type: String
     },

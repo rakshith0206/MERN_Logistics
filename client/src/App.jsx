@@ -2,19 +2,20 @@ import React, { Component } from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 
 
-
 import Navbar from './components/Navbar'
 import Landing from './components/Landing'
 import Login from './components/Login'
 import Register from './components/Register'
 import Profile from './components/Profile'
-import Footer from './components/Footer'
 import companyRegistration from './components/companyRegistration'
 import companyLogin from './components/companyLogin'
 import logisticsRegistration from './components/logisticsRegistration'
 import logisticsLogin from './components/logisticsLogin'
 import truckerRegistration from './components/truckerRegistration'
 import truckerLogin from './components/truckerLogin'
+import companyMaps from './components/companyMaps'
+import truckerMaps from './components/truckerMaps'
+import logisticsMaps from './components/logisticsMaps'
 
 
 class App extends Component {
@@ -22,7 +23,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Navbar/>
+        <Navbar/>
           <Route exact path ="/" component = {Landing}/>
           <div className="container">
             <Route path ="/companyRegistration" component ={companyRegistration}/>
@@ -34,9 +35,9 @@ class App extends Component {
             <Route path ="/register" component ={Register}/>
             <Route path ="/login" component ={Login}/>
             <Route path ="/profile" component ={Profile}/>
-            <div className="container">
-              <Footer/>
-            </div>
+            <Route path ="/companyMaps" component ={companyMaps}/>
+            <Route path ="/truckerMaps" component ={truckerMaps}/>
+            <Route path ="/logisticsMaps" component ={logisticsMaps}/>
           </div>
         </div>
       </Router>

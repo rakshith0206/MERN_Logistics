@@ -29,7 +29,7 @@ class logisticsRegistration extends Component {
             password: this.state.password
         }
         logisticsregister(logisticsuser).then(res => {
-            this.props.history.push('/login')
+            this.props.history.push('/logisticsLogin')
         })
         
     }
